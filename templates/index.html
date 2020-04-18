@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="COVID-19 REST API for India">
+  <meta name="author" content="Mantavya Gajjar">
+  <title>COVID-19 REST API for India</title>
+  <link href="static/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="static/css/custom.css" rel="stylesheet"/>
+</head>
+
+<body id="page-top">
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto mt-5">
+          <h2><strong>COVID-19 REST API for India</strong></h2>
+          <p>
+            API for COVID-19 stats in India sourced from many different DataSources.
+            This REST API is a fetches date from the data source and convert it into the required forms and return the JSON data.
+          </p>
+
+          <h4>API</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col" class="fixedcol">Data</th>
+                <th scope="col">URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fixedcol">Case counts by states - latest
+                  <p class="small text-muted">Latset infomraiton about the COVID-19 case by state</p>
+                </td>
+                <td><a href="/api/latest/stats">/api/latest/stats</a></td>
+              </tr>
+
+              <tr>
+                <td class="fixedcol">
+                  Case history by states - latest
+                  <p class="small text-muted">Historical data for all states of India since 14th March 2020 COVID-19</p>
+                </td>
+                <td><a href="/api/latest/stats/history">/api/latest/stats/history</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>API Source</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col" class="fixedcol">Data Source</th>
+                <th scope="col">URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fixedcol">
+                <td class="fixedcol">COVID-19 REST API for India</td>
+                <td><a href="https://api.rootnet.in/" target="_blank">https://api.rootnet.in/</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
