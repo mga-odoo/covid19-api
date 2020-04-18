@@ -24,7 +24,7 @@
           </p>
 
           <h4>API</h4>
-          <table class="table table-striped">
+          <table class="table">
             <thead>
               <tr>
                 <th scope="col" class="fixedcol">Data</th>
@@ -33,18 +33,26 @@
             </thead>
             <tbody>
               <tr>
-                <td class="fixedcol">Case counts by states - latest
-                  <p class="small text-muted">Latset infomraiton about the COVID-19 case by state</p>
+                <td class="fixedcol">Case Counts
+                  <p class="small text-muted">Latset case counts of COVID-19 by state</p>
                 </td>
                 <td><a href="/rootnet/api/latest/stats">/rootnet/api/latest/stats</a></td>
               </tr>
 
               <tr>
                 <td class="fixedcol">
-                  Case history by states - latest
-                  <p class="small text-muted">Historical data for all states of India since 14th March 2020 COVID-19</p>
+                  Case History
+                  <p class="small text-muted">Historical case counts of COVID-19 by state since 10 March 2020</p>
                 </td>
                 <td><a href="/rootnet/api/latest/stats/history">/rootnet/api/latest/stats/history</a></td>
+              </tr>
+
+              <tr>
+                <td class="fixedcol">
+                  Case by Districts
+                  <p class="small text-muted">Latset case counts of COVID-19 by districts of all states</p>
+                </td>
+                <td><a href="/covid19india/api/case_by_district">/covid19india/api/case_by_district</a></td>
               </tr>
             </tbody>
           </table>
