@@ -5,10 +5,12 @@ from flask import Flask
 from flask import render_template
 
 from services import rootnet
+from services import covid19india
 
 app = Flask(__name__, static_url_path='/static')
 
 app.register_blueprint(rootnet.app)
+app.register_blueprint(covid19india.app)
 
 @app.route('/')
 def root():

@@ -6,9 +6,9 @@ from flask import Blueprint
 from maps import state_code
 from tools import fetch_data
 
-app = Blueprint('rootnet', __name__, template_folder='templates')
-
 API_ENDPOINT = 'https://api.rootnet.in/covid19-in'
+
+app = Blueprint('rootnet', __name__, template_folder='templates')
 
 @app.route('/rootnet/api/latest/stats', methods=['GET', 'POST'])
 def statewise():
@@ -42,5 +42,6 @@ def statewise_history():
     """
 
     json_data = fetch_data(API_ENDPOINT, '/stats/history')
+    #change data structure if you want data in other format
     result = json_data
     return json_data
