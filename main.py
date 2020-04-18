@@ -7,7 +7,6 @@ from flask import render_template
 from services import rootnet
 
 app = Flask(__name__, static_url_path='/static')
-app.debug = True
 
 app.register_blueprint(rootnet.app)
 

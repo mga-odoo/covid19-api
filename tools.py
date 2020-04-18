@@ -4,6 +4,8 @@
 import json
 from urllib.request import urlopen
 
+API_ENDPOINT = False
+
 def fetch_data(api=API_ENDPOINT, url='/api/latest/stats'):
     """method takes input and fetch data from data source and return json data
 

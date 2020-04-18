@@ -10,7 +10,7 @@ app = Blueprint('rootnet', __name__, template_folder='templates')
 
 API_ENDPOINT = 'https://api.rootnet.in/covid19-in'
 
-@app.route('/api/latest/stats', methods=['GET', 'POST'])
+@app.route('/rootnet/api/latest/stats', methods=['GET', 'POST'])
 def statewise():
     """Make a request to https://api.rootnet.in/covid19-in/stats/latest
 
@@ -34,16 +34,13 @@ def statewise():
 
     return result
 
-@app.route('/api/latest/stats/history', methods=['GET', 'POST'])
+@app.route('/rootnet/api/latest/stats/history', methods=['GET', 'POST'])
 def statewise_history():
     """Make a request to https://api.rootnet.in/covid19-in/stats/history
 
     Returns:
     """
 
-    json_data = json.loads("{}")
+    json_data = fetch_data(API_ENDPOINT, '/stats/history')
     result = json_data
     return json_data
-
-
-app.run(debug=True, host='0.0.0.0')
