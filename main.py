@@ -16,4 +16,13 @@ app.register_blueprint(covid19india.app)
 def root():
     return render_template('index.html')
 
+@app.route('/chart.html')
+def chart():
+    vals = {
+        'chart_title': "Case by State",
+        'chart_label': ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        'chart_data': [12, 19, 9, 5, 2, 3]
+    }
+    return render_template('chart.html', **vals)
+
 app.run(debug=True, host='0.0.0.0')
