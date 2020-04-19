@@ -14,5 +14,5 @@ app = Blueprint('covid19india', __name__, template_folder='templates')
 def case_by_district():
     json_data = fetch_data(API_ENDPOINT, '/v2/state_district_wise.json')
     #change data structure if you want data in other format
-    result = json_data
+    result = {'india':json_data}
     return result
